@@ -27,39 +27,38 @@ const { icon, label } = toRefs(props);
 
 <style lang="scss" scoped>
 .icon-button {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 
-    width: calc(100% - 16px);
+  width: calc(100% - 16px);
 
-    padding: 12px 8px;
-    gap: 16px;
+  padding: 12px 8px;
+  gap: 16px;
 
-    &__image-hover {
-        display: none;
+  &__image-hover {
+    display: none;
+  }
+
+  &__label {
+    font-weight: 500;
+    font-size: 19px;
+
+    color: $color-gray-500;
+  }
+  &:hover {
+    background-color: $color-gray-100;
+    border-radius: 4px;
+
+    .icon-button__label {
+      color: $color-gray-900;
     }
-
-    &__label {
-        font-weight: 500;
-        font-size: 19px;
-
-        color: $color-gray-500;
+    .icon-button__image {
+      display: none;
     }
-    &:hover {
-        background-color: $color-gray-100;
-        border-radius: 4px;
-
-        .icon-button__label {
-            color: $color-gray-900;
-        }
-        .icon-button__image {
-            display: none;
-        }
-        .icon-button__image-hover {
-            display: block;
-        }
+    .icon-button__image-hover {
+      display: block;
     }
+  }
 }
-</style>
 </style>
