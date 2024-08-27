@@ -8,6 +8,7 @@
       <div class="page__container__contents">
         <div class="summary">
           <!-- 포트폴리오 ui -->
+          <PortFolio></PortFolio>
           <!-- 차트 -->
         </div>
         <div class="table">
@@ -21,6 +22,7 @@
 <script setup lang="ts">
 import Header from "@components/organisms/common/Header.vue";
 import Navigaion from "@components/organisms/common/Navigation.vue";
+import PortFolio from "@/components/molecules/main/PortFolio.vue";
 </script>
 
 <style lang="scss" scoped>

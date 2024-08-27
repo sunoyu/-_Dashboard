@@ -16,7 +16,14 @@
           <IconButton :icon="'chart'" :label="'종목 검색기'"></IconButton>
         </RouterLink>
       </div>
-      <div class="navigation__menu-box__bottom"></div>
+      <div class="navigation__menu-box__bottom">
+        <RouterLink to="/" class="menu">
+          <IconButton
+            :icon="'global-search'"
+            :label="'의견 보내기'"
+          ></IconButton>
+        </RouterLink>
+      </div>
     </div>
   </div>
 </template>
@@ -29,7 +36,7 @@ function toHome() {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .navigation {
   display: flex;
   flex-direction: column;
